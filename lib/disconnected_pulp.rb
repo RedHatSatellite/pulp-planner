@@ -9,8 +9,6 @@
 # NON-INFRINGEMENT, or FITNESS FOR A PARTICULAR PURPOSE. You should
 # have received a copy of GPLv2 along with this software; if not, see
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
-# Manifest representation in Ruby
-#
 
 require 'uri'
 require 'socket'
@@ -99,8 +97,6 @@ private
 end
 
 module YumRepo
-
-  VERSION = '0.2.1'
 
   def self.bench(msg)
     if defined? $yumrepo_perf_debug
@@ -260,5 +256,3 @@ module YumRepo
 
   end
 end
-
-

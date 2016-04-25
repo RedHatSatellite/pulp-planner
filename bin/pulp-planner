@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# Copyright 2013 Red Hat, Inc.
+# Copyright 2016 Red Hat, Inc.
 #
 # This software is licensed to you under the GNU General Public
 # License as published by the Free Software Foundation; either version
@@ -10,14 +10,9 @@
 # NON-INFRINGEMENT, or FITNESS FOR A PARTICULAR PURPOSE. You should
 # have received a copy of GPLv2 along with this software; if not, see
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt.
-# Manifest representation in Ruby
-#
 
 # workaround for: https://github.com/grosser/fast_gettext/issues/32
 Encoding.default_external='UTF-8' if RUBY_VERSION >= '1.9'
-
-# solution reference: http://lists.openshift.redhat.com/openshift-archives/dev/2014-July/msg00193.html
-#ENV['LD_LIBRARY_PATH'] += ':/opt/rh/v8314/root/usr/lib64'
 
 APP_NAME = 'pulp-planner'
 LIB_PREFIX = "#{Dir.pwd}/../lib"
@@ -28,7 +23,6 @@ require 'openssl'
 require 'find'
 require 'net/http'
 require 'net/https'
-
 
 require "#{LIB_PREFIX}/manifest_reader.rb"
 require "#{LIB_PREFIX}/disconnected_pulp.rb"
