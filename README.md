@@ -14,7 +14,7 @@ Special thanks to katello-disconnect where all the manifest handeling code came 
     git clone https://github.com/sean797/pulp-planner.git
     cd pulp-planner/bin
     ./pulp-planner import -m ~/Downloads/manifest_66fdff61-a1ba-44ab-9d12-2c84a92e392d.zip
-    ./pulp-planner disbale -a
+    ./pulp-planner disable -a
     ./pulp-planner enable -r rhel-6-server-rh-common-rpms-6Server-x86_64,rhel-6-server-rh-common-rpms-6_7-x86_64
     ./pulp-planner list
     ./pulp-planner run
