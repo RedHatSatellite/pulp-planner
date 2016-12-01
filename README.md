@@ -2,11 +2,10 @@
 Gives minimum sizing estimate for Pulp based on Red Hat repos enabled; taking into account duplicate rpms in some repos
 
 ----------
-Special thanks to katello-disconnect where all the manifest handeling code came from! :+1:
+Special thanks to [katello-disconnect](https://github.com/Katello/katello-utils/) where all the manifest handeling code came from! :+1:
 
 ##### Installing dependencies
 
-    yum install rubygem-more_core_extensions rubygem-nokogiri
     dnf install rubygem-more_core_extensions rubygem-nokogiri
 
 ##### Running
