@@ -19,7 +19,7 @@ subscription-manager repos  \
 
 ##### Installing dependencies
 ~~~
-yum install rh-ror42-rubygem-nokogiri unzip
+yum install rh-ror42-rubygem-nokogiri unzip git
 ~~~
 ##### Running on a RHEL system.
 
@@ -39,7 +39,7 @@ scl enable rh-ror42 bash
 ##### Installing dependencies
 
 ~~~
-dnf install rubygem-more_core_extensions rubygem-nokogiri
+dnf install rubygem-more_core_extensions rubygem-nokogiri git
 ~~~
 
 ##### Running on a Fedora system.
